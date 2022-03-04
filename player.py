@@ -52,7 +52,7 @@ class HumanPlayer(Player):
         return pos
 
 
-class UnbiteableComputerPlayer(Player):
+class HardComputerPlayer(Player):
     def __init__(self, letter):
         super().__init__(letter)
 

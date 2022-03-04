@@ -1,7 +1,7 @@
 import time
 
 from game import TicTacToe
-from player import HumanPlayer, ComputerPlayer, UnbiteableComputerPlayer
+from player import HumanPlayer, ComputerPlayer, HardComputerPlayer
 
 
 def play(game: TicTacToe, player_o, player_x, print_game=True):
@@ -42,7 +42,7 @@ def play(game: TicTacToe, player_o, player_x, print_game=True):
 def runs(times):
 
     player_o = HumanPlayer('o')
-    player_x = UnbiteableComputerPlayer('x')
+    player_x = HardComputerPlayer('x')
     #player_o = ComputerPlayer('o')
     #player_x = ComputerPlayer('x')
     for _ in range(times):
